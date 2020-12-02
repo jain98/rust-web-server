@@ -59,6 +59,7 @@ impl ThreadPool {
     {
         self.sender.send(Message::NewJob(Box::new(f)))
             .expect("Oh noes! Looks like none of the threads in the thread pool are alive!");
+        }
     }
 }
 
