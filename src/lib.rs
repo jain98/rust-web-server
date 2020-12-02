@@ -61,7 +61,6 @@ impl ThreadPool {
             .expect("Oh noes! Looks like none of the threads in the thread pool are alive!");
         }
     }
-}
 
 impl Drop for ThreadPool {
     fn drop(&mut self) {
